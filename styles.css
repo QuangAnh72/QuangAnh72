@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.info-block p {
+    margin: 5px 0;
+}
+
+/* Kiểu cho phần Sở Thích */
+#so-thich ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Kiểu cho phần Hình ảnh */
+.gallery {
+    display: flex; /* Sắp xếp ảnh trên cùng một hàng */
+    flex-wrap: wrap; /* Cho phép ảnh xuống hàng nếu không đủ chỗ */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+    justify-content: center; /* Căn giữa các ảnh */
+}
+
+.gallery img {
+    width: 100%; /* Chiều rộng mặc định */
+    max-width: 280px; /* Giới hạn chiều rộng tối đa */
+    height: auto;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03); /* Phóng to nhẹ khi rê chuột vào */
+}
+
+.note {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
